@@ -60,7 +60,7 @@ export default function LoginScreen() {
           <img
             src="/login-image.png"
             alt="logo"
-            className="w-full h-screen object-cover mx-auto md:ml-0"
+            className="w-full h-full object-cover mx-auto md:ml-0"
           />
         </div>
 
@@ -132,7 +132,7 @@ export default function LoginScreen() {
                 className={`w-full ${
                   loading
                     ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                    : "bg-purple-600 text-white hover:bg-purple-700"
+                    : "bg-[#4A154B] text-white hover:bg-[#4A154B] "
                 } py-2 rounded-lg transition-all duration-200`}
               >
                 {loading ? "Signing in..." : "Sign In"}

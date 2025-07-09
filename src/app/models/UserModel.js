@@ -5,7 +5,10 @@ const UserSchema = new mongoose.Schema(
     username: String,
     email: { type: String, required: true },
     password: { type: String, required: true },
-  
+  isLoggedIn: {
+  type: Boolean,
+  default: false,
+},
     otp: { type: String },
     otpExpires: { type: Date },
   },
